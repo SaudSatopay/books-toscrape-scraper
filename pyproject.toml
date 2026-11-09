@@ -1,0 +1,17 @@
+[project]
+name = "books-toscrape-scraper"
+version = "1.0.0"
+description = "Scrape all 1000 books from books.toscrape.com into a CSV file."
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

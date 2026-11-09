@@ -1,0 +1,4 @@
+-r requirements.txt
+# pytest 9.2.0 crashes on start-up on some Python 3.10 builds
+pytest>=8,<9.2
+ruff>=0.6
